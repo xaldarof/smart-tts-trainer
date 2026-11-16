@@ -1,0 +1,22 @@
+# Top-level runtime dependencies (pinned). Transitive pins: constraints.txt
+# Verified to co-install on Python 3.12 (see IMPLEMENTATION_STATUS.md).
+coqui-tts==0.28.0          # XTTS v2 model + GPTTrainer (idiap fork, maintained); MPL-2.0 code, CPML weights
+coqui-tts-trainer==0.4.0
+six==1.17.0                # imported by coqui-tts 0.28 but not declared as a dependency
+faster-whisper==1.2.1
+ctranslate2==4.9.0
+silero-vad==6.2.3
+demucs==4.1.0
+speechbrain==1.1.2
+pyannote.audio==4.0.7
+yt-dlp==2026.10.26
+PySide6==6.12.0
+soundfile==0.14.0
+soxr==1.1.0
+librosa==1.0.1
+numpy==2.5.5
+scipy==1.18.1
+transformers==5.23.0
+huggingface-hub==2.4.0
+noisereduce==3.0.3
+num2words==0.5.14

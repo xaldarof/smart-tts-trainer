@@ -1,0 +1,17 @@
+[project]
+name = "local-voice-trainer"
+version = "0.1.0"
+description = "Local Windows desktop app: YouTube/local audio -> speaker-filtered Russian TTS dataset -> XTTS v2 fine-tuning -> speech synthesis"
+requires-python = ">=3.11,<3.14"
+readme = "README.md"
+
+[project.scripts]
+local-voice-trainer = "app.main:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider"
+filterwarnings = ["ignore::DeprecationWarning", "ignore::UserWarning", "ignore::FutureWarning"]
+
+[tool.ruff]
+line-length = 120
